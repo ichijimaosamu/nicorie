@@ -10,8 +10,8 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <head>
 <meta charset="UTF-8">
 <title></title>
-<meta name="keywords" content="">
-<meta name="description" content="">
+<meta name="keywords" content="web,デザイン,制作,ニコリエ,地域密着型">
+<meta name="description" content="地域密着型デザインスタジオ ニコリエデザインプランニング">
 <?php
 if ($_SERVER["HTTP_HOST"] == 'localhost') {
 	include_once 'common/common_head.php';
@@ -42,9 +42,9 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <article class="main">
 <!--main-->
 
-
-
-
+<div class="main__box">
+<p class="main__logo"><img src="<?php echo $base_url . '/'; ?>img/logo.png" class="sp_none" alt="地域密着型デザインスタジオ ニコリエデザインプランニング"><img src="<?php echo $base_url . '/'; ?>img/logo_sp.png" class="pc_none" alt="地域密着型デザインスタジオ ニコリエデザインプランニング"></p>
+</div>
 
 <!--/main-->
 </article>

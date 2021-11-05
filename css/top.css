@@ -191,6 +191,7 @@ html {
 
 body {
   -webkit-text-size-adjust: 100%;
+  background: #7FBE26;
   color: #444;
 }
 body * {
@@ -316,5 +317,21 @@ body > #container {
 /*----------------------------------------------------------------------
 11.	ページ別個別設定
 ----------------------------------------------------------------------*/
+.main__box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 333px;
+  height: 284px;
+  margin: auto;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .main__box {
+    width: 80%;
+  }
+}
 
 /*# sourceMappingURL=top.css.map */

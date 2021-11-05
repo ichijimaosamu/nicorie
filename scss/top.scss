@@ -93,3 +93,19 @@ File Name: top.scss
 11.	ページ別個別設定
 ----------------------------------------------------------------------*/
 
+.main {
+	&__box {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: image-width("../img/logo.png");
+		height: image-height("../img/logo.png");
+		margin: auto;
+		text-align: center;
+		@include sp() {
+			width: 80%;
+		}
+	}
+}

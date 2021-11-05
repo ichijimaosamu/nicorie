@@ -1,3 +1,4 @@
+<?php if(false) { ?>
 <!--▼SP用 Humberger Menu/////////////////////////////////-->
 <div id="humberger" class="hidden-md hidden-lg">
 <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
@@ -17,3 +18,4 @@
 </div>
 <script src="<?php echo $base_url . '/'; ?>js/humbergermenu_sp.js"></script>
 <!--▲/*SP用 Humberger Menu END/////////////////////////////////-->
+<?php } ?>
