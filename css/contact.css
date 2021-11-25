@@ -2,7 +2,7 @@
 /*----------------------------------------------------------------------
 ------------------------------------------------------------------------
 
-File Name: top.scss
+File Name: contact.scss
 
 ------------------------------------------------------------------------
 ----------------------------------------------------------------------*/
@@ -233,6 +233,10 @@ body > #container {
   height: auto;
 }
 
+#container {
+  min-height: auto;
+}
+
 /*----------------------------------------------------------------------
 5.	共通部分
 ----------------------------------------------------------------------*/
@@ -375,194 +379,60 @@ body > #container {
 /*----------------------------------------------------------------------
 11.	ページ別個別設定
 ----------------------------------------------------------------------*/
-.main {
-  padding-bottom: 130px;
-}
 .main__logo {
-  padding: 150px 0;
+  padding: 70px 0;
+  text-align: center;
+}
+.main__box {
+  margin-bottom: 25px;
+  padding: 55px 0 60px;
   text-align: center;
 }
 .main__box__title {
-  width: 333px;
-  margin: 0 auto 33px;
-  padding-bottom: 40px;
-  color: #7FBD26;
-  font-size: 13px;
-  border-bottom: 5px solid #7FBD26;
-  text-align: center;
-}
-.main__box__title img {
-  margin-top: 10px;
-}
-.main__box__lead {
-  margin-bottom: 33px;
-  color: #808080;
-  font-family: 'Kaisei Opti', serif;
-  font-size: 21px;
-  line-height: 1.66667;
-  text-align: center;
-}
-.main__box__info {
-  width: 720px;
-  height: 105px;
-  margin: auto;
-  padding-top: 3px;
-  background: url("../img/main_box_info_bg.gif") left top no-repeat;
-  font-family: 'Kaisei Opti', serif;
-  text-align: center;
-}
-.main__box__info:first-of-type {
   margin-bottom: 55px;
+  color: #808080;
+  font-size: 22px;
+  letter-spacing: 3px;
 }
-.main__box__info:last-of-type {
+
+.contact__email {
+  margin-bottom: 25px;
+}
+.contact__email a {
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  display: block;
+  width: 240px;
+  margin: auto;
+  padding: 12px 0 16px;
+  background: #7FBD26;
+  color: #FFF;
+  font-size: 22px;
+}
+.contact__tel {
   margin-bottom: 60px;
 }
-.main__box__info__term {
-  margin-bottom: 15px;
+.contact__tel a {
   color: #7FBD26;
-  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", arial, helvetica, sans-serif;
-  font-size: 20px;
-  letter-spacing: 3px;
-}
-.main__box__info__description {
-  color: #2a2a2a;
   font-size: 24px;
-  font-weight: 700;
-}
-.main__box__info__description small {
-  display: block;
-  margin-top: 20px;
-  font-size: 13px;
-  font-weight: 700;
-}
-.main__box__info__description a {
-  color: #50AAD2;
-  font-weight: 700;
-  text-decoration: underline;
-}
-.main__box__info__description a:hover {
-  text-decoration: none;
-}
-.main__address {
-  color: #FFF;
-  font-size: 12px;
-  line-height: 1.58333;
-  text-align: center;
 }
 
-.works__title {
-  margin-bottom: 30px;
+.address__term {
+  width: 432px;
+  margin: 0 auto 18px;
+  padding-bottom: 18px;
   color: #7FBD26;
-  font-size: 24px;
-  letter-spacing: 3px;
-  text-align: center;
-}
-.works__lead {
-  margin-bottom: 30px;
-  color: #808080;
-  font-size: 14px;
-  line-height: 1.78571;
-  text-align: center;
-}
-.works__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -35px;
-}
-.works__item {
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  border-radius: 12px;
-  width: 270px;
-  height: 270px;
-  margin: 35px 35px 0 0;
-  padding: 25px;
-  background-color: #7FBD26;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  color: #FFF;
-}
-.works__item:nth-child(3n) {
-  margin-right: 0;
-}
-.works__item:nth-child(1) {
-  background-image: url("../img/works_item_bg1.jpg");
-}
-.works__item:nth-child(2) {
-  background-image: url("../img/works_item_bg2.jpg");
-}
-.works__item:nth-child(3) {
-  background-image: url("../img/works_item_bg3.jpg");
-}
-.works__item:nth-child(4) {
-  background-image: url("../img/works_item_bg4.jpg");
-}
-.works__item:nth-child(5) {
-  background-image: url("../img/works_item_bg5.jpg");
-}
-.works__item:nth-child(6) {
-  background-image: url("../img/works_item_bg6.jpg");
-}
-.works__item:nth-child(7) {
-  background-image: url("../img/works_item_bg7.jpg");
-}
-.works__item:nth-child(8) {
-  background-image: url("../img/works_item_bg8.jpg");
-}
-.works__item:nth-child(9) {
-  background-image: url("../img/works_item_bg9.jpg");
-}
-.works__item:nth-child(10) {
-  background-image: url("../img/works_item_bg10.jpg");
-}
-.works__item:nth-child(11) {
-  background-image: url("../img/works_item_bg11.jpg");
-}
-.works__item:nth-child(12) {
-  background-image: url("../img/works_item_bg12.jpg");
-}
-.works__item:nth-child(13) {
-  background-image: url("../img/works_item_bg13.jpg");
-}
-.works__item:nth-child(14) {
-  background-image: url("../img/works_item_bg14.jpg");
-}
-.works__item:nth-child(15) {
-  background-image: url("../img/works_item_bg15.jpg");
-}
-.works__item:nth-child(16) {
-  background-image: url("../img/works_item_bg16.jpg");
-}
-.works__item:nth-child(17) {
-  background-image: url("../img/works_item_bg17.jpg");
-}
-.works__item:nth-child(18) {
-  background-image: url("../img/works_item_bg18.jpg");
-}
-.works__item:nth-child(19) {
-  background-image: url("../img/works_item_bg19.jpg");
-}
-.works__item:nth-child(20) {
-  background-image: url("../img/works_item_bg20.jpg");
-}
-.works__item__term {
-  margin-bottom: 15px;
-  font-size: 18px;
-  letter-spacing: 2px;
-  text-align: center;
-}
-.works__item__description {
   font-size: 12px;
-  line-height: 1.625;
+  border-bottom: 2px solid #7FBD26;
+  text-align: center;
 }
-.works__text {
-  margin: 50px 0 60px;
+.address__term img {
+  margin-top: 10px;
+}
+.address__description {
   color: #989898;
-  font-size: 18px;
-  text-align: center;
-}
-.works__logo {
-  text-align: center;
+  font-size: 14px;
 }
 
-/*# sourceMappingURL=top.css.map */
+/*# sourceMappingURL=contact.css.map */

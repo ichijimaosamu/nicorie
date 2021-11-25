@@ -129,6 +129,23 @@
 		margin: auto;
 		background: #FFF;
 
+		&.-lower {
+			display: flex;
+			justify-content: center;
+			position: relative;
+		}
+
+		&__logo {
+			position: absolute;
+			left: 20px;
+			top: 14px;
+
+			img {
+				width: 94px;
+				height: auto;
+			}
+		}
+
 		&__nav {
 			&__list {
 				display: flex;
@@ -162,6 +179,15 @@
 }
 
 @mixin layout-main {
+	.main {
+		&__box {
+			@include border-radius(15px);
+			width: 960px;
+			margin: 0 auto 10px;
+			padding: 45px 40px 15px;
+			background: #FFF;
+		}
+	}
 }
 
 @mixin layout-sub {
@@ -171,5 +197,13 @@
 
 @mixin layout-footer {
 	.footer {
+		&__logo {
+			text-align: center;
+
+			img {
+				width: 140px;
+				height: auto;
+			}
+		}
 	}
 }
