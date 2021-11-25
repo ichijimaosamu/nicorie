@@ -67,7 +67,10 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <div class="works">
 <h3 class="works__title">About Works</h3>
 
-<p class="works__lead">印刷会社で培った取材、撮影、グラフィックデザイン。デザインブランドの運営で培った企画、イベント、プロダクトデザイン。アートディレクターとして培ったチームでの様々な企画制作。これらを昇華させ、強力なネットワークを駆使しあらゆるご要望にお応えします。</p>
+<p class="works__lead">印刷会社で培った取材、撮影、グラフィックデザイン。<br>
+デザインブランドの運営で培った企画、イベント、プロダクトデザイン。<br>
+アートディレクターとして培ったチームでの様々な企画制作。<br>
+これらを昇華させ、強力なネットワークを駆使しあらゆるご要望にお応えします。</p>
 
 <ul class="works__list">
 <li class="works__item">
@@ -170,7 +173,7 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 
 </section>
 
-<p class="main__address">654-0162 兵庫県神戸市須磨区神の谷6丁目2-106-204<br>
+<p class="main__address">&#12306;654-0162 兵庫県神戸市須磨区神の谷6丁目2-106-204<br>
 info@nicorie.com<br>
 070-1552-7400<br>
 神戸市須磨区・長田区・垂水区・西区・明石市</p>
