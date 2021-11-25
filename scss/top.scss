@@ -94,18 +94,166 @@ File Name: top.scss
 ----------------------------------------------------------------------*/
 
 .main {
-	&__box {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		width: image-width("../img/logo.png");
-		height: image-height("../img/logo.png");
-		margin: auto;
+	padding-bottom: 130px;
+
+	&__logo {
+		padding: 150px 0;
 		text-align: center;
-		@include sp() {
-			width: 80%;
+	}
+
+	&__box {
+		@include border-radius(15px);
+		width: 960px;
+		margin: 0 auto 10px;
+		padding: 45px 40px 15px;
+		background: #FFF;
+
+		&__title {
+			width: 333px;
+			margin: 0 auto 33px;
+			padding-bottom: 40px;
+			color: color(3);
+			font-size: 13px;
+			border-bottom: 5px solid color(3);
+			text-align: center;
+
+			img {
+				margin-top: 10px;
+			}
 		}
+
+		&__lead {
+			margin-bottom: 33px;
+			color: #808080;
+			font-family: 'Kaisei Opti', serif;
+			font-size: 21px;
+			line-height: (35/21);
+			text-align: center;
+		}
+
+		&__info {
+			width: image-width("../img/main_box_info_bg.gif");
+			height: image-height("../img/main_box_info_bg.gif");
+			margin: auto;
+			padding-top: 3px;
+			background: url("../img/main_box_info_bg.gif") left top no-repeat;
+			font-family: 'Kaisei Opti', serif;
+			text-align: center;
+
+			&:first-of-type {
+				margin-bottom: 55px;
+			}
+			&:last-of-type {
+				margin-bottom: 60px;
+			}
+
+			&__term {
+				margin-bottom: 15px;
+				color: color(3);
+				font-family: $font_goth;
+				font-size: 20px;
+				letter-spacing: 3px;
+			}
+
+			&__description {
+				color: #2a2a2a;
+				font-size: 24px;
+				font-weight: 700;
+
+				small {
+					display: block;
+					margin-top: 20px;
+					font-size: 13px;
+					font-weight: 700;
+				}
+
+				a {
+					color: #50AAD2;
+					font-weight: 700;
+					text-decoration: underline;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+
+	&__address {
+		color: #FFF;
+		font-size: 12px;
+		line-height: (19/12);
+		text-align: center;
+	}
+}
+
+.works {
+	&__title {
+		margin-bottom: 30px;
+		color: color(3);
+		font-size: 24px;
+		letter-spacing: 3px;
+		text-align: center;
+	}
+
+	&__lead {
+		margin-bottom: 30px;
+		color: #808080;
+		font-size: 14px;
+		line-height: (25/14);
+		text-align: center;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: -35px;
+	}
+
+	&__item {
+		@include border-radius(12px);
+		width: 270px;
+		height: 270px;
+		margin: 35px 35px 0 0;
+		padding: 25px;
+		background-color: #7FBD26;
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		color: #FFF;
+
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+
+		$length: 20;
+		@for $i from 1 through $length {
+			&:nth-child(#{$i}) {
+				background-image: url("../img/works_item_bg#{$i}.jpg");
+			}
+		}
+
+		&__term {
+			margin-bottom: 15px;
+			font-size: 18px;
+			letter-spacing: 2px;
+			text-align: center;
+		}
+
+		&__description {
+			font-size: 12px;
+			line-height: (19.5/12);
+		}
+	}
+
+	&__text {
+		margin: 50px 0 60px;
+		color: #989898;
+		font-size: 18px;
+		text-align: center;
+	}
+
+	&__logo {
+		text-align: center;
 	}
 }

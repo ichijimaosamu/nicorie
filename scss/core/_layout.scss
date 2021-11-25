@@ -10,7 +10,7 @@
 
 	body {
 		-webkit-text-size-adjust: 100%;
-		background: #7FBE26;
+		background: color(3);
 		color: color(1);
 
 		* {
@@ -124,26 +124,44 @@
 
 @mixin layout-header {
 	.header {
-		position: relative;
+		@include border-radius(0 0 15px 15px);
+		width: 960px;
+		margin: auto;
+		background: #FFF;
+
+		&__nav {
+			&__list {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 60px;
+			}
+
+			&__item {
+				margin-right: 25px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				a {
+					color: color(3);
+					font-size: 13px;
+
+					&.-noready {
+						pointer-events: none;
+						color: #888;
+					}
+				}
+			}
+		}
 	}
 }
 
 @mixin layout-content {
-	#content {
-	}
 }
 
 @mixin layout-main {
-
-	.topicpath {
-	}
-
-	.topicpath-item {
-	}
-
-	.main {
-	}
-
 }
 
 @mixin layout-sub {
