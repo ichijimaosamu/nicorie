@@ -59,8 +59,14 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 </dl>
 
 <dl class="main__box__info">
-<dt class="main__box__info__term">Original Product</dt>
-<dd class="main__box__info__description">「Smart Spec 卓上カレンダー」＜初めてのご注文15％OFF＞<br>
+<dt class="main__box__info__term">Startup Campaign</dt>
+<dd class="main__box__info__description">動画制作キャンペーン！　全込み88,000円（税込）<br>
+<p class="main__box__info__description__text">構成案、シナリオ制作、進行管理、テロップ挿入等の編集、<br>
+YouTubeへのアップロード支援など、全て込みです！<br>
+<small>（撮影時間：1〜2時間、仕上がり時間：3〜5分程度の場合。）</small><br>
+さらに！ 複数の撮影を同時に行えば、単価はどんどん下がります！<br>
+ご興味のある方は、まずはお問い合わせください。たくさんの制作実績などもご覧いただけます。<br>
+ドローン撮影も僅かな追加費用で可能です！</p>
 <small>（<a href="<?php echo $base_url . '/'; ?>product/">“Product”</a>より、詳細をごらんください。）</small></dd>
 </dl>
 

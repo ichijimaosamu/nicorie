@@ -404,7 +404,7 @@ body > #container {
 }
 .main__box__info {
   width: 720px;
-  height: 105px;
+  min-height: 105px;
   margin: auto;
   padding-top: 3px;
   background: url("../img/main_box_info_bg.gif") left top no-repeat;
@@ -429,11 +429,25 @@ body > #container {
   font-size: 24px;
   font-weight: 700;
 }
-.main__box__info__description small {
-  display: block;
+.main__box__info__description__text {
   margin-top: 20px;
+  color: #808080;
+  font-family: 'M PLUS 1', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.main__box__info__description small {
   font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.main__box__info__description > small {
+  display: block;
   font-weight: 700;
+}
+.main__box__info__description > small:last-of-type {
+  margin-top: 20px;
 }
 .main__box__info__description a {
   color: #50AAD2;

@@ -127,7 +127,7 @@ File Name: top.scss
 
 		&__info {
 			width: image-width("../img/main_box_info_bg.gif");
-			height: image-height("../img/main_box_info_bg.gif");
+			min-height: image-height("../img/main_box_info_bg.gif");
 			margin: auto;
 			padding-top: 3px;
 			background: url("../img/main_box_info_bg.gif") left top no-repeat;
@@ -154,11 +154,28 @@ File Name: top.scss
 				font-size: 24px;
 				font-weight: 700;
 
-				small {
-					display: block;
+				&__text {
 					margin-top: 20px;
+					color: #808080;
+					font-family: 'M PLUS 1', sans-serif;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: (24/16);
+				}
+
+				small {
 					font-size: 13px;
+					font-weight: 400;
+					line-height: (24/16);
+				}
+
+				> small {
+					display: block;
 					font-weight: 700;
+
+					&:last-of-type {
+						margin-top: 20px;
+					}
 				}
 
 				a {
