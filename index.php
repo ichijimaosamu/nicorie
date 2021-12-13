@@ -67,7 +67,7 @@ YouTubeへのアップロード支援など、全て込みです！<br>
 さらに！ 複数の撮影を同時に行えば、単価はどんどん下がります！<br>
 ご興味のある方は、まずはお問い合わせください。たくさんの制作実績などもご覧いただけます。<br>
 ドローン撮影も僅かな追加費用で可能です！</p>
-<small>（<a href="<?php echo $base_url . '/'; ?>product/">“Product”</a>より、詳細をごらんください。）</small></dd>
+<small>（<a href="<?php echo $base_url . '/'; ?>contact/">“Contact”</a>より、お問い合わせください。）</small></dd>
 </dl>
 
 <div class="works">
