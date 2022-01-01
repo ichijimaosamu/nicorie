@@ -1,0 +1,271 @@
+//変数インクルード
+@import 'core';
+@import 'compass';
+/*----------------------------------------------------------------------
+------------------------------------------------------------------------
+
+File Name: contact.scss
+
+------------------------------------------------------------------------
+----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------
+------------------------------------------------------------------------
+目次
+
+1.	共通使用変数定義
+2.	ブラウザデフォルトスタイルリセット
+3.	HTMLタグ
+4.	container
+5.	共通部分
+6.	header
+7.	content
+8.	main
+9.	sub
+10.	footer
+11.	ページ別個別設定
+
+------------------------------------------------------------------------
+----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------
+1.	共通使用変数定義
+----------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------
+2.	ブラウザデフォルトスタイルリセット
+----------------------------------------------------------------------*/
+@include reset;
+//compass
+@include reset-html5;
+//オリジナル
+@include resethtml5;
+
+
+/*----------------------------------------------------------------------
+3.	HTMLタグ
+----------------------------------------------------------------------*/
+@include layout-tags;
+
+
+/*----------------------------------------------------------------------
+4.	container
+----------------------------------------------------------------------*/
+@include layout-container;
+
+#container {
+	min-height: auto;
+}
+
+
+/*----------------------------------------------------------------------
+5.	共通部分
+----------------------------------------------------------------------*/
+@include common;
+
+
+/*----------------------------------------------------------------------
+6.	#header
+----------------------------------------------------------------------*/
+@include layout-header;
+
+
+/*----------------------------------------------------------------------
+7.	#content
+----------------------------------------------------------------------*/
+@include layout-content;
+
+
+/*----------------------------------------------------------------------
+8.	#main
+----------------------------------------------------------------------*/
+@include layout-main;
+
+
+/*----------------------------------------------------------------------
+9.	#sub
+----------------------------------------------------------------------*/
+@include layout-sub;
+
+
+/*----------------------------------------------------------------------
+10.	#footer
+----------------------------------------------------------------------*/
+@include layout-footer;
+
+
+/*----------------------------------------------------------------------
+11.	ページ別個別設定
+----------------------------------------------------------------------*/
+
+.main {
+	padding-bottom: 130px;
+
+	&__logo {
+		padding: 70px 0;
+		text-align: center;
+	}
+
+	&__box {
+		margin-bottom: 25px;
+		padding: 55px 0 15px;
+		text-align: center;
+
+		&__lowerlogo {
+			margin-bottom: 50px;
+
+			img {
+				width: 200px;
+				height: auto;
+			}
+		}
+
+		&__catch {
+			margin-bottom: 12px;
+			color: #808080;
+			font-family: 'M PLUS 1', sans-serif;
+			font-size: 24px;
+			line-height: (36/24);
+			letter-spacing: 4px;
+		}
+
+		&__title {
+			display: flex;
+			align-items: center;
+			width: 406px;
+			height: 107px;
+			margin: 0 auto 16px;
+			background: url("../img/profile_main_box_title_bg.gif") center center no-repeat;
+
+			img {
+				width: 332px;
+				height: auto;
+				margin: auto;
+			}
+		}
+
+		&__lead {
+			margin-bottom: 45px;
+			color: #808080;
+			font-family: 'Kaisei Opti', serif;
+			font-size: 18px;
+			line-height: (32/18);
+			letter-spacing: 3px;
+
+			&__middle {
+				font-size: 22px;
+			}
+
+			&__big {
+				display: block;
+				margin: 5px 0 10px;
+				color: #000;
+				font-size: 26px;
+				line-height: (48/26);
+			}
+
+			&__footer {
+				display: block;
+				position: relative;
+				margin-top: 60px;
+
+				&:before {
+					@include border-radius(50%);
+					content: "";
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: -35px;
+					width: 13px;
+					height: 13px;
+					margin: auto;
+					background: #7FBE26;
+				}
+			}
+		}
+	}
+
+	&__address {
+		color: #FFF;
+		font-size: 12px;
+		line-height: (19/12);
+		text-align: center;
+	}
+}
+
+.concept {
+	@include border-radius(12px);
+	position: relative;
+	width: 436px;
+	margin: 0 auto 90px;
+	padding: 40px 0 30px;
+	border: 1px solid #7FBE26;
+
+	&__title {
+		position: absolute;
+		left: 0;
+		top: -18px;
+		color: #7FBE26;
+		font-size: 18px;
+		font-family: 'Kaisei Opti', serif;
+	}
+
+	&__term {
+		margin-bottom: 20px;
+		color: #7FBE26;
+		font-family: 'Kaisei Opti', serif;
+		font-size: 24px;
+		letter-spacing: 3px;
+	}
+
+	&__description {
+		font-size: 14px;
+		line-height: 2;
+	}
+}
+
+.representative {
+	width: 610px;
+	margin: 0 auto 150px;
+
+	&__title {
+		margin-bottom: 20px;
+		padding: 0 12px 12px;
+		font-size: 14px;
+		font-weight: 500;
+		text-align: left;
+		border-bottom: 3px solid #7FBD26;
+	}
+
+	&__subtitle {
+		margin-bottom: 10px;
+		padding: 0 12px;
+		color: #7FBE26;
+		font-size: 14px;
+		font-weight: 500;
+		text-align: left;
+	}
+
+	&__text {
+		padding: 0 12px;
+		color: #808080;
+		font-size: 13px;
+		line-height: (28/13);
+		text-align: left;
+
+		&:not(:last-child) {
+			margin-bottom: 35px;
+		}
+
+		a {
+			color: #29AAE1;
+			font-weight: 500;
+			text-decoration: underline;
+		}
+	}
+}
+
+.works {
+	&__logo {
+		text-align: center;
+	}
+}

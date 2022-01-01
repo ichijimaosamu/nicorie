@@ -1,0 +1,536 @@
+@charset "UTF-8";
+/*----------------------------------------------------------------------
+------------------------------------------------------------------------
+
+File Name: contact.scss
+
+------------------------------------------------------------------------
+----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------
+------------------------------------------------------------------------
+目次
+
+1.	共通使用変数定義
+2.	ブラウザデフォルトスタイルリセット
+3.	HTMLタグ
+4.	container
+5.	共通部分
+6.	header
+7.	content
+8.	main
+9.	sub
+10.	footer
+11.	ページ別個別設定
+
+------------------------------------------------------------------------
+----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------
+1.	共通使用変数定義
+----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------
+2.	ブラウザデフォルトスタイルリセット
+----------------------------------------------------------------------*/
+body,
+h1, h2, h3, h4, h5, h6,
+div,
+p,
+ul, ol, dl,
+form, fieldset,
+table,
+address,
+blockquote,
+noscript,
+pre,
+tr,
+td,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-style: normal;
+}
+
+body {
+  font-family: 'M PLUS 1', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+* html body {
+  font-size: 62.5%;
+}
+
+* + html body {
+  font-size: 62.5%;
+}
+
+/* start \*/
+html:\66irst-child body {
+  font-size: 62.5%;
+}
+
+/* end */
+body:first-of-type {
+  font-size: 62.5%;
+}
+
+body > iframe {
+  display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+small {
+  font-size: 1em;
+}
+
+mark {
+  background: none;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+  font-size: inherit;
+  font: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+dd {
+  margin: 0;
+}
+
+a,
+abbr,
+acronym,
+em,
+strong,
+span,
+img,
+sub,
+sup,
+input,
+button,
+textarea,
+select,
+label,
+caption {
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+  vertical-align: bottom;
+}
+@media screen and (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+}
+
+caption, th {
+  font-weight: normal;
+  text-align: left;
+}
+
+th, td {
+  padding: 0px;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea {
+  vertical-align: top;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+header, footer, article, section, aside,
+nav,
+figure, figcaption {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/*----------------------------------------------------------------------
+3.	HTMLタグ
+----------------------------------------------------------------------*/
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  background: #7FBD26;
+  color: #444;
+}
+body * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a, a:before, a:after {
+  -moz-transition: all 0.15s linear;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+a > * {
+  -moz-transition: all 0.15s linear;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+a:hover > * {
+  text-decoration: none;
+}
+
+/*----------------------------------------------------------------------
+4.	container
+----------------------------------------------------------------------*/
+#container {
+  position: relative;
+  min-height: 100%;
+}
+* html #container {
+  height: 100%;
+}
+body > #container {
+  height: auto;
+}
+
+#container {
+  min-height: auto;
+}
+
+/*----------------------------------------------------------------------
+5.	共通部分
+----------------------------------------------------------------------*/
+.fll {
+  float: left;
+}
+
+.flr {
+  float: right;
+}
+
+@media screen and (min-width: 769px) {
+  .sp_none {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sp_none {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .pc_none {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pc_none {
+    display: block;
+  }
+}
+
+.right-nav {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+.right-nav a {
+  -moz-transition: opacity 0.15s linear;
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+  display: block;
+}
+.right-nav a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+@media screen and (max-width: 768px) {
+  .right-nav img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #drawernav {
+    display: none;
+  }
+}
+
+/*----------------------------------------------------------------------
+6.	#header
+----------------------------------------------------------------------*/
+.header {
+  -moz-border-radius: 0 0 15px 15px;
+  -webkit-border-radius: 0;
+  border-radius: 0 0 15px 15px;
+  width: 960px;
+  margin: auto;
+  background: #FFF;
+}
+.header.-lower {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.header__logo {
+  position: absolute;
+  left: 20px;
+  top: 14px;
+}
+.header__logo img {
+  width: 94px;
+  height: auto;
+}
+.header__nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+.header__nav__item {
+  margin-right: 25px;
+}
+.header__nav__item:last-child {
+  margin-right: 0;
+}
+.header__nav__item a {
+  color: #7FBD26;
+  font-size: 13px;
+}
+.header__nav__item a.-noready {
+  pointer-events: none;
+  color: #888;
+}
+
+/*----------------------------------------------------------------------
+7.	#content
+----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------
+8.	#main
+----------------------------------------------------------------------*/
+.main__box {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  width: 960px;
+  margin: 0 auto 10px;
+  padding: 45px 40px 15px;
+  background: #FFF;
+}
+
+/*----------------------------------------------------------------------
+9.	#sub
+----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------
+10.	#footer
+----------------------------------------------------------------------*/
+.footer__logo {
+  text-align: center;
+}
+.footer__logo img {
+  width: 140px;
+  height: auto;
+}
+
+/*----------------------------------------------------------------------
+11.	ページ別個別設定
+----------------------------------------------------------------------*/
+.main {
+  padding-bottom: 130px;
+}
+.main__logo {
+  padding: 70px 0;
+  text-align: center;
+}
+.main__box {
+  margin-bottom: 25px;
+  padding: 55px 0 15px;
+  text-align: center;
+}
+.main__box__lowerlogo {
+  margin-bottom: 50px;
+}
+.main__box__lowerlogo img {
+  width: 200px;
+  height: auto;
+}
+.main__box__catch {
+  margin-bottom: 12px;
+  color: #808080;
+  font-family: 'M PLUS 1', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 4px;
+}
+.main__box__title {
+  display: flex;
+  align-items: center;
+  width: 406px;
+  height: 107px;
+  margin: 0 auto 16px;
+  background: url("../img/profile_main_box_title_bg.gif") center center no-repeat;
+}
+.main__box__title img {
+  width: 332px;
+  height: auto;
+  margin: auto;
+}
+.main__box__lead {
+  margin-bottom: 45px;
+  color: #808080;
+  font-family: 'Kaisei Opti', serif;
+  font-size: 18px;
+  line-height: 1.77778;
+  letter-spacing: 3px;
+}
+.main__box__lead__middle {
+  font-size: 22px;
+}
+.main__box__lead__big {
+  display: block;
+  margin: 5px 0 10px;
+  color: #000;
+  font-size: 26px;
+  line-height: 1.84615;
+}
+.main__box__lead__footer {
+  display: block;
+  position: relative;
+  margin-top: 60px;
+}
+.main__box__lead__footer:before {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -35px;
+  width: 13px;
+  height: 13px;
+  margin: auto;
+  background: #7FBE26;
+}
+.main__address {
+  color: #FFF;
+  font-size: 12px;
+  line-height: 1.58333;
+  text-align: center;
+}
+
+.concept {
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  position: relative;
+  width: 436px;
+  margin: 0 auto 90px;
+  padding: 40px 0 30px;
+  border: 1px solid #7FBE26;
+}
+.concept__title {
+  position: absolute;
+  left: 0;
+  top: -18px;
+  color: #7FBE26;
+  font-size: 18px;
+  font-family: 'Kaisei Opti', serif;
+}
+.concept__term {
+  margin-bottom: 20px;
+  color: #7FBE26;
+  font-family: 'Kaisei Opti', serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+.concept__description {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.representative {
+  width: 610px;
+  margin: 0 auto 150px;
+}
+.representative__title {
+  margin-bottom: 20px;
+  padding: 0 12px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  border-bottom: 3px solid #7FBD26;
+}
+.representative__subtitle {
+  margin-bottom: 10px;
+  padding: 0 12px;
+  color: #7FBE26;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+.representative__text {
+  padding: 0 12px;
+  color: #808080;
+  font-size: 13px;
+  line-height: 2.15385;
+  text-align: left;
+}
+.representative__text:not(:last-child) {
+  margin-bottom: 35px;
+}
+.representative__text a {
+  color: #29AAE1;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.works__logo {
+  text-align: center;
+}
+
+/*# sourceMappingURL=profile.css.map */
