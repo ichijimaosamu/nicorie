@@ -1,6 +1,7 @@
 @mixin layout-tags {
 	html ,
 	body {
+		min-width: 1020px;
 		height: 100%;
 	}
 

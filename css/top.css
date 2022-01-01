@@ -142,11 +142,6 @@ img {
   border: none;
   vertical-align: bottom;
 }
-@media screen and (max-width: 768px) {
-  img {
-    width: 100%;
-  }
-}
 
 caption, th {
   font-weight: normal;
@@ -183,6 +178,7 @@ figure, figcaption {
 ----------------------------------------------------------------------*/
 html,
 body {
+  min-width: 1020px;
   height: 100%;
 }
 
@@ -579,34 +575,41 @@ body > #container {
   text-align: center;
 }
 
-.start {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: #7FBD26;
-  z-index: 9000;
-}
-@keyframes moveToTop {
-  100% {
-    top: 22.5%;
+@media screen and (min-width: 769px) {
+  .start {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #7FBD26;
+    z-index: 9000;
+  }
+  @keyframes moveToTop {
+    100% {
+      top: 22.5%;
+    }
+  }
+  .start__logo {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    top: calc(50% - 115px);
+    text-align: center;
+  }
+  .start__logo.animate {
+    animation-name: moveToTop;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
   }
 }
-.start__logo {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  right: 0;
-  top: calc(50% - 115px);
-  text-align: center;
-}
-.start__logo.animate {
-  animation-name: moveToTop;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
+@media screen and (max-width: 768px) {
+  .start {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=top.css.map */
