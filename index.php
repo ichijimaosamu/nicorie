@@ -215,6 +215,10 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <!--/sp_menu-->
 <?php } ?>
 
+<div class="start">
+<p class="start__logo"><img src="<?php echo $base_url . '/'; ?>img/logo.svg" alt="ニコリエデザインプランニング"></p>
+</div>
+
 <script src="<?php echo $base_url . '/'; ?>js/top.js"></script>
 </body>
 </html>
