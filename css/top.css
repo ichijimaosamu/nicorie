@@ -380,7 +380,7 @@ body > #container {
 }
 .main__box__title {
   width: 333px;
-  margin: 0 auto 33px;
+  margin: 0 auto 60px;
   padding-bottom: 40px;
   color: #7FBD26;
   font-size: 13px;
@@ -458,6 +458,40 @@ body > #container {
   font-size: 12px;
   line-height: 1.58333;
   text-align: center;
+}
+
+.news {
+  width: 720px;
+  height: 337px;
+  margin: 0 auto 100px;
+  padding: 20px 70px;
+  background: url("../img/news_bg.gif") center top no-repeat;
+  overflow-y: auto;
+}
+.news__item {
+  font-size: 14px;
+}
+.news__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.news__item dl {
+  display: flex;
+}
+.news__item__date, .news__item__description {
+  line-height: 1.71429;
+}
+.news__item__date {
+  margin-right: 20px;
+  color: #989898;
+}
+.news__item__description {
+  color: #000;
+}
+.news__item a {
+  color: #718CC7;
+}
+.news__item a:hover {
+  text-decoration: underline;
 }
 
 .works__title {
