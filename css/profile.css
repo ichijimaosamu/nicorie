@@ -491,7 +491,7 @@ body > #container {
 
 .representative {
   width: 610px;
-  margin: 0 auto 150px;
+  margin: 0 auto 40px;
 }
 .representative__title {
   margin-bottom: 20px;
@@ -523,6 +523,23 @@ body > #container {
   color: #29AAE1;
   font-weight: 500;
   text-decoration: underline;
+}
+.representative__text.-black {
+  color: #000;
+}
+
+.photo {
+  width: 610px;
+  margin: 0 auto 100px;
+  padding: 0 12px;
+  text-align: left;
+}
+.photo__term {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.photo__image:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 .works__logo {
