@@ -2,7 +2,7 @@
 /*----------------------------------------------------------------------
 ------------------------------------------------------------------------
 
-File Name: profile.scss
+File Name: work.scss
 
 ------------------------------------------------------------------------
 ----------------------------------------------------------------------*/
@@ -384,7 +384,7 @@ body > #container {
 }
 .main__box {
   margin-bottom: 25px;
-  padding: 55px 0 15px;
+  padding: 55px 120px 15px;
   text-align: center;
 }
 .main__box__lowerlogo {
@@ -459,91 +459,39 @@ body > #container {
   text-align: center;
 }
 
-.concept {
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  border-radius: 12px;
+.work__title {
   position: relative;
-  width: 436px;
-  margin: 0 auto 90px;
-  padding: 40px 0 30px;
-  border: 1px solid #7FBE26;
-}
-.concept__title {
-  position: absolute;
-  left: 0;
-  top: -18px;
-  color: #7FBE26;
-  font-size: 18px;
+  margin-bottom: 40px;
+  padding-bottom: 25px;
+  color: #808080;
   font-family: 'Kaisei Opti', serif;
-}
-.concept__term {
-  margin-bottom: 20px;
-  color: #7FBE26;
-  font-family: 'Kaisei Opti', serif;
-  font-size: 24px;
+  font-size: 30px;
   letter-spacing: 3px;
 }
-.concept__description {
-  font-size: 14px;
-  line-height: 2;
+.work__title:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 332px;
+  height: 5px;
+  margin: auto;
+  background: #7FBD26;
 }
-
-.representative {
-  width: 610px;
-  margin: 0 auto 40px;
+.work__title small {
+  display: block;
+  margin-top: 20px;
+  color: #5C779C;
+  font-size: 16px;
+  font-weight: bold;
 }
-.representative__title {
-  margin-bottom: 20px;
-  padding: 0 12px 12px;
-  font-size: 14px;
-  font-weight: 500;
-  text-align: left;
-  border-bottom: 3px solid #7FBD26;
-}
-.representative__subtitle {
-  margin-bottom: 10px;
-  padding: 0 12px;
-  color: #7FBE26;
-  font-size: 14px;
-  font-weight: 500;
-  text-align: left;
-}
-.representative__text {
-  padding: 0 12px;
-  color: #808080;
-  font-size: 13px;
-  line-height: 2.15385;
-  text-align: left;
-}
-.representative__text:not(:last-child) {
-  margin-bottom: 35px;
-}
-.representative__text a {
-  color: #29AAE1;
-  font-weight: 500;
-  text-decoration: underline;
-}
-.representative__text.-black {
+.work__text {
+  margin-bottom: 100px;
   color: #000;
-}
-
-.photo {
-  width: 610px;
-  margin: 0 auto 100px;
-  padding: 0 12px;
+  font-size: 14px;
+  line-height: 1.85714;
   text-align: left;
 }
-.photo__term {
-  margin-bottom: 8px;
-  font-size: 14px;
-}
-.photo__image:not(:last-child) {
-  margin-bottom: 25px;
-}
 
-.works__logo {
-  text-align: center;
-}
-
-/*# sourceMappingURL=profile.css.map */
+/*# sourceMappingURL=work.css.map */

@@ -7,7 +7,7 @@
 <ul class="header__nav__list">
 <li class="header__nav__item"><a href="<?php echo $base_url . '/'; ?>"><span>Home</span></a></li>
 <li class="header__nav__item"><a href="<?php echo $base_url . '/'; ?>profile/"><span>Profile</span></a></li>
-<li class="header__nav__item"><a href="<?php echo $base_url . '/'; ?>work/" class="-noready"><span>Work</span></a></li>
+<li class="header__nav__item"><a href="<?php echo $base_url . '/'; ?>work/"><span>Work</span></a></li>
 <li class="header__nav__item"><a href="<?php echo $base_url . '/'; ?>product/" class="-noready"><span>Product</span></a></li>
 <li class="header__nav__item"><a href="<?php echo $base_url . '/'; ?>contact/"><span>Contact</span></a></li>
 </ul>

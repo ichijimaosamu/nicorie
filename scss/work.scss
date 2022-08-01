@@ -4,7 +4,7 @@
 /*----------------------------------------------------------------------
 ------------------------------------------------------------------------
 
-File Name: profile.scss
+File Name: work.scss
 
 ------------------------------------------------------------------------
 ----------------------------------------------------------------------*/
@@ -107,7 +107,7 @@ File Name: profile.scss
 
 	&__box {
 		margin-bottom: 25px;
-		padding: 55px 0 15px;
+		padding: 55px 120px 15px;
 		text-align: center;
 
 		&__lowerlogo {
@@ -192,102 +192,42 @@ File Name: profile.scss
 	}
 }
 
-.concept {
-	@include border-radius(12px);
-	position: relative;
-	width: 436px;
-	margin: 0 auto 90px;
-	padding: 40px 0 30px;
-	border: 1px solid #7FBE26;
-
+.work {
 	&__title {
-		position: absolute;
-		left: 0;
-		top: -18px;
-		color: #7FBE26;
-		font-size: 18px;
+		position: relative;
+		margin-bottom: 40px;
+		padding-bottom: 25px;
+		color: #808080;
 		font-family: 'Kaisei Opti', serif;
-	}
-
-	&__term {
-		margin-bottom: 20px;
-		color: #7FBE26;
-		font-family: 'Kaisei Opti', serif;
-		font-size: 24px;
+		font-size: 30px;
 		letter-spacing: 3px;
-	}
 
-	&__description {
-		font-size: 14px;
-		line-height: 2;
-	}
-}
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 332px;
+			height: 5px;
+			margin: auto;
+			background: #7FBD26;
+		}
 
-.representative {
-	width: 610px;
-	margin: 0 auto 40px;
-
-	&__title {
-		margin-bottom: 20px;
-		padding: 0 12px 12px;
-		font-size: 14px;
-		font-weight: 500;
-		text-align: left;
-		border-bottom: 3px solid #7FBD26;
-	}
-
-	&__subtitle {
-		margin-bottom: 10px;
-		padding: 0 12px;
-		color: #7FBE26;
-		font-size: 14px;
-		font-weight: 500;
-		text-align: left;
+		small {
+			display: block;
+			margin-top: 20px;
+			color: #5C779C;
+			font-size: 16px;
+			font-weight: bold;
+		}
 	}
 
 	&__text {
-		padding: 0 12px;
-		color: #808080;
-		font-size: 13px;
-		line-height: (28/13);
-		text-align: left;
-
-		&:not(:last-child) {
-			margin-bottom: 35px;
-		}
-
-		a {
-			color: #29AAE1;
-			font-weight: 500;
-			text-decoration: underline;
-		}
-
-		&.-black {
-			color: #000;
-		}
-	}
-}
-
-.photo {
-	width: 610px;
-	margin: 0 auto 100px;
-	padding: 0 12px;
-	text-align: left;
-
-	&__term {
-		margin-bottom: 8px;
+		margin-bottom: 100px;
+		color: #000;
 		font-size: 14px;
-	}
-
-	&__image {
-		&:not(:last-child) {
-			margin-bottom: 25px;
-		}
-	}
-}
-
-.works {
-	&__logo {
-		text-align: center;
+		line-height: (26/14);
+		text-align: left;
 	}
 }
