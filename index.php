@@ -48,27 +48,29 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <h2 class="main__box__title">地域密着型デザインスタジオ<br>
 <img src="<?php echo $base_url . '/'; ?>img/main_box_title.svg" alt="ニコリエデザインプランニング"></h2>
 
-<p class="main__box__lead">このたび、神戸市西部で<br>
-地域密着型のデザインスタジオをはじめました。<br>
-どうぞ気軽にご相談ください。</p>
-
-<dl class="main__box__info">
-<dt class="main__box__info__term">Startup Campaign</dt>
-<dd class="main__box__info__description">初めてのお客様に限り、デザイン料30〜50％OFF<br>
-<small>（<a href="<?php echo $base_url . '/'; ?>contact/">“Contact”</a>より、まずはお見積もりをご請求ください。）</small></dd>
+<ul class="news">
+<li class="news__item">
+<dl>
+<dt class="news__item__date">2022.06.15</dt>
+<dd class="news__item__description">神戸御影に、サテライトオフィスが出来ました！<br>
+お洒落な空間で、15人程度の会議も可能です。<a href="">詳しくはこちら</a></dd>
 </dl>
-
-<dl class="main__box__info">
-<dt class="main__box__info__term">Startup Campaign</dt>
-<dd class="main__box__info__description">動画制作キャンペーン！　全込み88,000円（税込）<br>
-<p class="main__box__info__description__text">構成案、シナリオ制作、進行管理、テロップ挿入等の編集、<br>
-YouTubeへのアップロード支援など、全て込みです！<br>
-<small>（撮影時間：1〜2時間、仕上がり時間：3〜5分程度の場合。）</small><br>
-さらに！ 複数の撮影を同時に行えば、単価はどんどん下がります！<br>
-ご興味のある方は、まずはお問い合わせください。たくさんの制作実績などもご覧いただけます。<br>
-ドローン撮影も僅かな追加費用で可能です！</p>
-<small>（<a href="<?php echo $base_url . '/'; ?>contact/">“Contact”</a>より、お問い合わせください。）</small></dd>
+</li>
+<li class="news__item">
+<dl>
+<dt class="news__item__date">2022.06.10</dt>
+<dd class="news__item__description">カセットテープやDAT音源などのデータ変換も承ります。<br>
+音響のプロが完璧に調整して驚きの安価です。</dd>
 </dl>
+</li>
+<li class="news__item">
+<dl>
+<dt class="news__item__date">2022.06.05</dt>
+<dd class="news__item__description">カセットテープやDAT音源などのデータ変換も承ります。<br>
+音響のプロが完璧に調整して驚きの安価です。</dd>
+</dl>
+</li>
+</ul>
 
 <div class="works">
 <h3 class="works__title">About Works</h3>
@@ -203,7 +205,6 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 }
 ?>
 
-<?php if(false) { ?>
 <!--sp_menu-->
 <?php
 if ($_SERVER["HTTP_HOST"] == 'localhost') {
@@ -213,7 +214,6 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 }
 ?>
 <!--/sp_menu-->
-<?php } ?>
 
 <div class="start">
 <p class="start__logo"><img src="<?php echo $base_url . '/'; ?>img/logo.svg" alt="ニコリエデザインプランニング"></p>
