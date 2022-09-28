@@ -266,23 +266,33 @@ File Name: top.scss
 	}
 
 	&__item {
-		@include border-radius(12px);
 		width: 270px;
 		height: 270px;
 		margin: 35px 35px 0 0;
-		padding: 25px;
-		background-color: #7FBD26;
-		background-position: center bottom;
-		background-repeat: no-repeat;
 		color: #FFF;
 
 		&:nth-child(3n) {
 			margin-right: 0;
 		}
 
+		a {
+			@include border-radius(12px);
+			display: block;
+			height: 100%;
+			padding: 25px;
+			background-color: #7FBD26;
+			background-position: center bottom;
+			background-repeat: no-repeat;
+			color: #FFF;
+
+			&.-noready {
+				pointer-events: none;
+			}
+		}
+
 		$length: 20;
 		@for $i from 1 through $length {
-			&:nth-child(#{$i}) {
+			&:nth-child(#{$i}) a {
 				background-image: url("../img/works_item_bg#{$i}.jpg");
 			}
 		}

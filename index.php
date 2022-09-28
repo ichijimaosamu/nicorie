@@ -53,7 +53,7 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <dl>
 <dt class="news__item__date">2022.06.15</dt>
 <dd class="news__item__description">神戸御影に、サテライトオフィスが出来ました！<br>
-お洒落な空間で、15人程度の会議も可能です。<a href="">詳しくはこちら</a></dd>
+お洒落な空間で、15人程度の会議も可能です。<a href="<?php echo $base_url . '/'; ?>profile/#satelite">詳しくはこちら</a></dd>
 </dl>
 </li>
 <li class="news__item">
@@ -66,8 +66,8 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <li class="news__item">
 <dl>
 <dt class="news__item__date">2022.06.05</dt>
-<dd class="news__item__description">カセットテープやDAT音源などのデータ変換も承ります。<br>
-音響のプロが完璧に調整して驚きの安価です。</dd>
+<dd class="news__item__description">書家による筆文字で、タイトルや看板など制作承ります。<br>
+まだ売り出し中の書家なので、今ならサービス価格です！</dd>
 </dl>
 </li>
 </ul>
@@ -82,94 +82,124 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 
 <ul class="works__list">
 <li class="works__item">
+<a href="<?php echo $base_url . '/'; ?>work/#work1">
 <dl>
 <dt class="works__item__term">印刷</dt>
 <dd class="works__item__description">長年培ってきた印刷知識、編集技術、ネットワークを活用し、どんな状態のデータでも最適な印刷データに再構築し、大ロットから小ロットまで安価にお届けいたします。</dd>
 </dl>
+</a>
 </li>
 <li class="works__item">
+<a href="<?php echo $base_url . '/'; ?>work/#work2">
 <dl>
 <dt class="works__item__term">チラシ・ポスター</dt>
 <dd class="works__item__description">思わず、手に取りたくなるチラシ。ふと、足を止めてしまうポスター。キャッチーでありながらも、きちんと内容が伝わるものを制作します。</dd>
 </dl>
+</a>
 </li>
 <li class="works__item">
+<a href="<?php echo $base_url . '/'; ?>work/#work3">
 <dl>
 <dt class="works__item__term">会社案内</dt>
 <dd class="works__item__description">まず、御社の事業内容をしっかりと伺い、その魅力を伝えるために必要な媒体、仕様、ボリュームをご提案します。ぜひ原稿作りからお手伝いさせてください。</dd>
 </dl>
+</a>
 </li>
 <li class="works__item">
+<a href="#" class="-noready">
 <dl>
 <dt class="works__item__term">カタログ</dt>
 <dd class="works__item__description">明瞭なカテゴライズ、検索性の高いレイアウトとページネーションで、美しく読みやすい編集をいたします。商品の魅力をスマートに伝えられます。</dd>
 </dl>
+</a>
 </li>
 <li class="works__item">
+<a href="#" class="-noready">
 <dl>
 <dt class="works__item__term">ロゴマーク制作</dt>
 <dd class="works__item__description">ロゴマークに最も大切なことは、企業コンセプトをきちんと表現し、創業時の想いやビジョンが伝わってくる形かどうかということ。納得がいくまで作り直しいたします。</dd>
 </dl>
+</a>
 </li>
 <li class="works__item">
+<a href="#" class="-noready">
 <dl>
 <dt class="works__item__term">キャラクター制作</dt>
 <dd class="works__item__description">根強い人気のゆるキャラから、個性あふれる奇抜なデザインのものまで、お望みのタイプに合ったイラストレーターが制作いたします。強力な広告塔をぜひ手に入れてください。</dd>
 </dl>
+</a>
 </li>
 <li class="works__item">
+<a href="#" class="-noready">
 <dl>
 <dt class="works__item__term">ノベルティ</dt>
 <dd class="works__item__description">需要の高い除菌ウェットティッシュやマスクをはじめ、イベント時の配布に最適なうちわ、付箋、カレンダー、メモ帳など、オリジナルグッズの製作を、多彩なアイテムからご提案します。</dd>
 </dl>
+</a>
 </li>
 <li class="works__item">
+<a href="#" class="-noready">
 <dl>
 <dt class="works__item__term">商品パッケージ</dt>
 <dd class="works__item__description">どんなに良い商品でも、売り場でその魅力が伝わらないとお客様の手に届きません。限られたコストの中で最大限のパフォーマンスが出せる仕様をご提案いたします。</dd>
 </dl>
+</a>
 </li>
 <li class="works__item">
+<a href="#" class="-noready">
 <dl>
 <dt class="works__item__term">展示会サポート</dt>
 <dd class="works__item__description">ブースデザインからパネル、バナー、POP制作など、トータルにプロデュースいたします。特に、1〜2コマが得意です。パーツ1点から製作いたしますので、ぜひご相談ください。</dd>
 </dl>
+</a>
 </li>
 <li class="works__item">
+<a href="#" class="-noready">
 <dl>
 <dt class="works__item__term">ブランドプロデュース</dt>
 <dd class="works__item__description">ブランド運営はスタートがとても大切です。しっかりしたブランディングを構築し、ぶれない運営を確立していくためのトータルのお手伝いをいたします。</dd>
 </dl>
+</a>
 </li>
 <li class="works__item">
+<a href="#" class="-noready">
 <dl>
 <dt class="works__item__term">のぼり・横断幕</dt>
 <dd class="works__item__description">工場直販価格で、圧倒的なコストパフォーマンス！ 1枚から承ります！ポップなデザインからクールなデザインなど、幅広くお任せいただけます。</dd>
 </dl>
+</a>
 </li>
 <li class="works__item">
+<a href="#" class="-noready">
 <dl>
 <dt class="works__item__term">ホームページ制作</dt>
 <dd class="works__item__description">今はスマホで全てが完結できる時代です。スマホに最適化し、洗練されたデザインのHPを制作しませんか？お手軽なプランから様々なニーズに合わせて制作いたします。</dd>
 </dl>
+</a>
 </li>
 <li class="works__item">
+<a href="#" class="-noready">
 <dl>
 <dt class="works__item__term">動画制作</dt>
 <dd class="works__item__description">YouTubeがテレビの存在を脅かす昨今、もはや会社PRなどは動画制作が当たり前。YouTubeへのアップまでサポートします。オンラインライブ配信もお任せください。</dd>
 </dl>
+</a>
 </li>
 <li class="works__item">
+<a href="#" class="-noready">
 <dl>
 <dt class="works__item__term">看板制作</dt>
 <dd class="works__item__description">各種屋外看板の制作も安価に承ります。掲出の際に必要な各種申請書の役所への提出も代行できますので、トータルに安心してお任せいただけます。</dd>
 </dl>
+</a>
 </li>
 <li class="works__item">
+<a href="#" class="-noready">
 <dl>
 <dt class="works__item__term">トラックマーキング</dt>
 <dd class="works__item__description">トラックや社用車などに、社名等をデザインし施工します。かなり珍しい「差し替え式」も安価に施工できます。ぜひ一度ご相談ください。</dd>
 </dl>
+</a>
 </li>
 </ul>
 

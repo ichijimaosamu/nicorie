@@ -106,24 +106,29 @@ NHK「おはよう日本」にて話題の商品として紹介。<br>
 その他、ピアノ雑誌、婦人雑誌、建築雑誌、新聞やwebニュースなど掲載多数。</p>
 
 <h4 class="representative__subtitle">■プライベート</h4>
-<p class="representative__text">社会人バドミントンチーム「<a href="https://www.coccoclub.org/" target="_blank" rel="noopener">COCCO CLUB</a>」代表<br>
-国際交流団体「<a href="https://www.oiw1989.com/" target="_blank" rel="noopener">大阪インザワールド</a>」所属</p>
+<p class="representative__text">
+神戸市職員団体認可組合「<a href="https://www.kobe-city-union.com/" target="_blank" rel="noopener">神戸シティユニオン</a>」運営役員<br>
+社会人バドミントンチーム「<a href="https://www.coccoclub.org/" target="_blank" rel="noopener">COCCO CLUB</a>」代表<br>
+国際交流団体「<a href="https://www.oiw1989.com/" target="_blank" rel="noopener">大阪インザワールド</a>」所属
+</p>
 
 <h4 class="representative__subtitle">ニコリエデザインプランニング</h4>
 <p class="representative__text -black">＜アトリエ兼オフィス＞<br>
 &#12306;654-0162 兵庫県神戸市須磨区神の谷6丁目2番106-204<br>
 info@nicorie.com / 070-1552-7400<br>
 ＜サテライトオフィス＞<br>
-〒658-0047 兵庫県神戸市東灘区御影３丁目２番11-135  神戸シティユニオン共同</p>
+〒658-0047 兵庫県神戸市東灘区御影３丁目２番11-135 神戸シティユニオン共同</p>
 </div>
 
 <div class="photo">
 <dl>
 <dt class="photo__term">代表：山本達也</dt>
 <dd class="photo__image"><img src="<?php echo $base_url . '/'; ?>img/profile_photo1.jpg" alt=""></dd>
+<?php if(false) { ?>
 <dt class="photo__term">アトリエ兼オフィス</dt>
 <dd class="photo__image"><img src="<?php echo $base_url . '/'; ?>img/profile_photo2.jpg" alt=""></dd>
-<dt class="photo__term">神戸御影サテライトオフィス</dt>
+<?php } ?>
+<dt id="satelite" class="photo__term">神戸御影サテライトオフィス</dt>
 <dd class="photo__image"><img src="<?php echo $base_url . '/'; ?>img/profile_photo3.jpg" alt=""></dd>
 </dl>
 </div>
